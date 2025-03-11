@@ -701,18 +701,18 @@ pathDefaults:
 paths:
   stream1:
     source: publisher
-    runOnInit: ffmpeg -re -stream_loop -1 -i cam3depan.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream1
+    runOnInit: ./run_ffmpeg.sh -re -stream_loop -1 -i cam3depan.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream1
 
   stream2:
     source: publisher
-    runOnInit: ffmpeg -re -stream_loop -1 -i cam2kiri.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream2
+    runOnInit: ./run_ffmpeg.sh -re -stream_loop -1 -i cam2kiri.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream2
 
   stream3:
     source: publisher
-    runOnInit: ffmpeg -re -stream_loop -1 -i cam1kanan.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream3
+    runOnInit: ./run_ffmpeg.sh -re -stream_loop -1 -i cam1kanan.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream3
 
   stream4:
     source: publisher
-    runOnInit: ffmpeg -re -stream_loop -1 -i cam5bni.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream4
+    runOnInit: ./run_ffmpeg.sh -re -stream_loop -1 -i cam5bni.mp4 -c:v copy -c:a copy -f rtsp rtsp://localhost:8554/stream4
 
   all_others:
